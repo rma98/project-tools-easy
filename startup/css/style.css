@@ -2,6 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
 
+:root {
+    --fonte-principal: 'Hind Madurai', sans-serif;
+    --fonte-pequena: small;
+    --fonte-grande: 2em;
+
+    --cor1: #C1A866;
+    --cor2: #3C0909;
+    --cor3: #D9D9D9;
+}
+
+* {
+    font-family: var(--fonte-principal);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,34 +23,39 @@ body {
 
 header {
     height: 112px;
-    background-color: #C1A866;
-    font-family: 'Hind Madurai', sans-serif;
+    background-color: var(--cor1);
 }
 
 img#logo {
     margin: 0px 0px 0px 125px;
     padding: 5px 0px 0px 0px;
+    cursor: default;
 }
 
 header > i {
     display: block;
     position: absolute;
-    color: #3C0909;
+    color: var(--cor2);
 }
 
 i#register {
-    margin: 50px 0px 0px 25px;
+    margin: 20px 0px 0px 977px;
 }
 
 i#location {
-    margin: 90px 0px 0px 25px;
+    margin: 70px 0px 0px 977px;
 }
 
 header > span {
     position: absolute;
-    color: #3C0909;
-    margin: 42px 0px 0px 47px;
-    font-size: small;
+    color: var(--cor2);
+    margin: 10px 0px 0px 1000px;
+    font-size: var(--fonte-pequena);
+}
+
+#titulo {
+    margin: 35px 0px 0px 15px;
+    font-size: var(--fonte-grande);
 }
 
 header > span > span {
@@ -47,16 +66,61 @@ header > span > span {
 }
 
 i#down {
-    margin: 57px 0px 0px 130px;
+    margin: 28px 0px 0px 1083px;
 }
 
-#location {
-    margin: 90px 0px 0px 47px;
+header > i:hover > div {
+    display: block;
+}
+
+header > i > div {
+    display: none;
+    background-color: var(--cor3);
+    position: absolute;
+    margin: -15px 0px 0px 0px;
+    width: 72px;
+    height: 29px;
+}
+
+.users {
+    display: block;
+    color: black;
+    font-size: var(--fonte-pequena);
+    text-decoration: none;
+    padding: 1px;
+}
+
+.users:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+#people {
+    background-color: var(--cor3);
+    position: absolute;
+    
+    width: 51px;
+    height: 38px;
+}
+
+.person {
+    color: black;
+    font-size: var(--fonte-pequena);
+    text-decoration: none;
+}
+
+.person:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+#cep {
+    margin: 70px 0px 0px 1000px;
 }
 
 header > input {
     position: absolute;
-    margin: 50px 0px 0px 200px;
+    margin: 42px 0px 0px 183px;
     width: 50%;
     height: 35px;
     border-radius: 10px;
@@ -67,33 +131,32 @@ header > input:focus {
 }
 
 #search {
-    margin: 60px 0px 0px 940px;
+    margin: 54px 0px 0px 922px;
 }
 
 #heart {
-    margin: 60px 0px 0px 80%;
+    margin: 80px 0px 0px 80%;
 }
 
 #basket {
-    margin: 60px 0px 0px 82%;
+    margin: 80px 0px 0px 82%;
 }
 
 #contato {
-    margin: 0px 0px 0px 75%;
+    margin: 0px 0px 0px 1170px;
 }
 
 #instagram {
-    margin: 0px 0px 0px 1235px;
+    margin: 0px 0px 0px 1250px;
 }
 
 #facebook {
-    margin: 0px 0px 0px 1260px;
+    margin: 0px 0px 0px 1270px;
 }
 
 nav {
-    font-family: 'Hind Madurai', sans-serif;
     height: 53px;
-    background-color: #D9D9D9;
+    background-color: var(--cor3);
     padding: 15px;
 }
 
@@ -106,5 +169,15 @@ nav > a {
 
 nav > a:hover {
     text-decoration: underline;
+    color: black;
+}
+
+nav > i {
+    display: block;
+    position: absolute;
+}
+
+#categoria {
+    margin: 5px 0px 0px 0px;
     color: black;
 }
