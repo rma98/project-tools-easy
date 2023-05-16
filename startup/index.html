@@ -13,11 +13,25 @@
 <body>
     <header>
         <a href="../lauding-page/home.html" target="_blank" rel="external"><img id="logo" src="imagens/logo.png" alt="Logo Tools Easy"></a>
+        <span id="titulo">Tools Easy</span>
         <i id="register" class="fa-solid fa-circle-user"></i>
         <i id="location" class="fa-solid fa-location-dot"></i>
         <span>Faça login <span>ou cadastre-se</span></span>
-        <i id="down" class="fa-solid fa-chevron-down"></i>
-        <span id="location">Informe seu CEP</span>
+        <i id="down" class="fa-solid fa-chevron-down">
+            <div>
+                <a class="users" href="#">entrar</a>
+                <span class="users" href="#">cadastrar 
+                    <i class="fa-solid fa-chevron-down">
+                        <div id="people">
+                            <a class="person" href="#">usuário 1</a>
+                            <a class="person" href="#">usuário 2</a>
+                            <a class="person" href="#">usuário 3</a>
+                        </div>
+                    </i>
+                </span>
+            </div>
+        </i>
+        <span id="cep">Informe seu CEP</span>
         <label for="site-search"></label>
         <input type="search" id="site-search" name="p" placeholder="busque aqui seu produto" size="30">
         <i id="search" class="fa-solid fa-magnifying-glass"></i>
@@ -29,6 +43,7 @@
     </header>
     <nav>
         <a href="#" target="_self" rel="next">CATEGORIAS</a>
+        <i id="categoria" class="fa-solid fa-chevron-down"></i>
         <a href="#" target="_self" rel="next">MAIS PROCURADOS</a>
         <a href="#" target="_self" rel="next">CUPONS</a>
         <a href="#" target="_self" rel="next">FURADEIRAS E PARFUSADEIRAS</a>
