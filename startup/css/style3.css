@@ -25,7 +25,7 @@ header {
     background: var(--cor1);
 }
 
-.col-3, .col-6 {
+.cabecalho {
     min-height: 112px;
     position: relative;
     text-align: center;
@@ -130,6 +130,40 @@ header {
 #cep {
     position: absolute;
     margin-top: 80px;
+}
+
+nav {
+    background-color: var(--cor3);
+    min-height: 53px;
+}
+
+.menu {
+    min-height: 53px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: var(--cor1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    min-width: 229px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown-content2 > a {
+    display: block;
+    text-decoration: none;
+    color: var(--cor2);
 }
 
 /* Estilos específicos para telas menores que 600px */
