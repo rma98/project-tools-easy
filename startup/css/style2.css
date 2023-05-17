@@ -131,3 +131,29 @@ header {
     position: absolute;
     margin-top: 80px;
 }
+
+/* Estilos específicos para telas menores que 600px */
+@media (max-width: 1000px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .col-4 > img {
+      margin-bottom: 10px;
+    }
+
+    #site-search {
+      width: 100%;
+    }
+
+    .col-4 i {
+      display: none;
+    }
+
+    .dropdown-content,
+    .sub-dropdown-content {
+      position: static;
+      display: block;
+      box-shadow: none;
+    }
+}
