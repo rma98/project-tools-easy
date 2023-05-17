@@ -4,7 +4,6 @@
 
 :root {
     --fonte-principal: 'Hind Madurai', sans-serif;
-    --fonte-pequena: small;
     --fonte-grande: 2em;
 
     --cor1: #C1A866;
@@ -23,160 +22,173 @@ body {
 
 header {
     min-height: 112px;
-    background-color: var(--cor1);
 }
 
-img#logo {
-    margin-left: 5%;
-    padding-top: 5px;
-    cursor: default;
-}
-
-header > i {
-    display: block;
-    position: absolute;
+.cabecalho {
+    min-height: 112px;
+    position: relative;
+    text-align: center;
     color: var(--cor2);
-}
-
-i#register {
-    margin: 2% 0px 0px 63%;
-}
-
-i#location {
-    margin: 5% 0px 0px 63%;
-}
-
-header > span {
-    position: absolute;
-    color: var(--cor2);
-    margin: 1% 0px 0px 65%;
-    font-size: var(--fonte-pequena);
+    font-weight: bold;
+    background: var(--cor1);
 }
 
 #titulo {
-    margin: 3% 0px 0px 0%;
     font-size: var(--fonte-grande);
 }
 
-header > span > span {
-    display: block;
-    position: absolute;
-    width: 84px;
-    
-}
-
-i#down {
-    margin: 2.3% 0px 0px 70.5%;
-}
-
-header > i:hover > div {
-    display: block;
-}
-
-header > i > div {
-    display: none;
-    background-color: var(--cor3);
-    position: absolute;
-    margin-top: -70%;
-    width: 72px;
-    height: 29px;
-}
-
-.users {
-    display: block;
-    color: black;
-    font-size: var(--fonte-pequena);
-    text-decoration: none;
-    padding: 1px;
-}
-
-.users:hover {
-    background-color: var(--cor1);
-    color: var(--cor2);
-}
-
-#people {
-    background-color: var(--cor3);
-    position: absolute;
-    width: 51px;
-    height: 38px;
-}
-
-.person {
-    color: black;
-    font-size: var(--fonte-pequena);
-    text-decoration: none;
-}
-
-.person:hover {
-    background-color: var(--cor1);
-    color: var(--cor2);
-}
-
-#cep {
-    margin: 4.5% 0px 0px 65%;
-}
-
-header > input {
-    position: absolute;
-    margin: 3% 0px 0px 11%;
-    width: 50%;
+#site-search {
+    margin-top: 5px;
     height: 35px;
+    width: 100%;
     border-radius: 10px;
 }
 
-header > input:focus {
+#site-search:focus {
     outline: none;
 }
 
-#search {
-    margin: 4% 0px 0px 59%;
+#pesquisa {
+    display: inline-block;
+    position: absolute;
+    margin: 12px 0px 0px -25px;
 }
 
-#heart {
-    margin: 6% 0px 0px 84%;
+#usuario {
+    position: absolute;
+    margin-top: 15px;
 }
 
-#basket {
-    margin: 6% 0px 0px 85.8%;
-}
-
-#contato {
-    margin: 0% 0px 0px 79%;
-}
-
-#instagram {
-    margin: 0.5% 0px 0px 84%;
-}
-
-#facebook {
-    margin: 0.5% 0px 0px 85.5%;
-}
-
-nav {
-    height: 53px;
-    background-color: var(--cor3);
-    padding: 15px;
-}
-
-nav > a {
-    text-decoration: none;
-    color: black;
-    padding: 0px;
-    margin-left: 4%;
-}
-
-nav > a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-nav > i {
-    display: block;
+.dropdown {
+    display: inline-block;
     position: absolute;
 }
 
-#categoria {
-    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.dropdown2{
+    position: relative;
+}
+
+.dropdown2 > a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    min-width: 64px;
+    z-index: 1;
+    top: 0;
+    left: 100%;
+}
+
+.dropdown2:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropdown-content > a {
+    display: block;
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+#contatos {
+    display: inline-block;
+    position: absolute;
+    margin-left: 35px;
+}
+
+#fav-icone {
+    display: inline-block;
+    position: absolute;
+    margin: 80px 0px 0px 125px;
+}
+
+#fav-icone > i {
+    padding: 2px;
+}
+
+#cep {
+    position: absolute;
+    margin-top: 80px;
+}
+
+nav {
+    min-height: 53px;
+}
+
+.menu {
+    min-height: 53px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--cor3);
+}
+
+.menu a {
+    text-decoration: none;
     color: black;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: var(--cor1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    min-width: 229px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown-content2 > a {
+    display: block;
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+/* Estilos específicos para telas menores que 600px */
+@media (max-width: 1000px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .col-3 > img {
+      margin-bottom: 10px;
+    }
+
+    #site-search {
+      width: 100%;
+    }
+
+    .col-3 i {
+      display: none;
+    }
+
+    .dropdown-content,
+    .sub-dropdown-content {
+      position: static;
+      display: block;
+      box-shadow: none;
+    }
 }
