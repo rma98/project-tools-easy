@@ -22,7 +22,6 @@ body {
 
 header {
     min-height: 112px;
-    background: var(--cor1);
 }
 
 .cabecalho {
@@ -31,6 +30,7 @@ header {
     text-align: center;
     color: var(--cor2);
     font-weight: bold;
+    background: var(--cor1);
 }
 
 #titulo {
@@ -133,13 +133,13 @@ header {
 }
 
 nav {
-    background-color: var(--cor3);
     min-height: 53px;
 }
 
 .menu {
     min-height: 53px;
     text-align: center;
+    background-color: var(--cor3);
 }
 
 .menu a {
