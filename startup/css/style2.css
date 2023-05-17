@@ -22,6 +22,7 @@ body {
 
 header {
     min-height: 112px;
+    background: var(--cor1);
 }
 
 .col-4 {
@@ -30,7 +31,6 @@ header {
     text-align: center;
     color: var(--cor2);
     font-weight: bold;
-    background: var(--cor1);
 }
 
 #titulo {
