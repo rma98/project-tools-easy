@@ -6,13 +6,11 @@
     --fonte-principal: 'Hind Madurai', sans-serif;
     --fonte-grande: 2em;
 
-    --cor1: #8A1515;
-    --cor2: #572727;
-    --cor3: #3C0909;
-    --cor4: #8A3E3E;
-    --cor5: #D62020;
-    --cor6: #C1A866;
-    --cor7: #3D3D0F;
+    --cor1: #3C0909;
+    --cor2: #c1a866;
+    --cor3: #d9d9d9;
+    --cor4: #66666e;
+    --cor5: #80727b;
 }
 
 * {
@@ -22,7 +20,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: linear-gradient(to left, var(--cor3), var(--cor2));
+    background-image: linear-gradient(to right, var(--cor1), var(--cor4));
 }
 
 main {
@@ -35,12 +33,16 @@ main {
 
 main header {
     text-align: center;
-    background-color: var(--cor4);
+    background-color: var(--cor2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 form {
     text-align: center;
-    background-color: var(--cor2);
+    background-color: var(--cor3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -50,36 +52,30 @@ form > div {
     font-weight: bold;
 }
 
-form label {
-    color: var(--cor4);
-}
-
 form input {
     width: 90%;
+    border: none;
+    border-radius: 10px;
 }
 
 input.btn {
-    background-color: var(--cor4);
-    color: var(--cor2);
+    background-color: var(--cor5);
     border: none;
-    border: 10px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 input.btn:hover {
-    background-color: var(--cor3);
-    color: var(--cor4);
-}
-
-form > span {
-    color: var(--cor5);
+    background-color: var(--cor2);
+    color: var(--cor1);
 }
 
 form a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--cor3);    
+    color: black;    
 }
 
 form a:hover {
-    color: var(--cor5);
+    color: var(--cor1);
 }
