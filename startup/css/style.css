@@ -151,6 +151,11 @@ nav {
     color: black;
 }
 
+.menu a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
 .dropdown-content2 {
     display: none;
     position: absolute;
