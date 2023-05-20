@@ -140,6 +140,7 @@ nav {
     text-align: center;
     font-weight: bold;
     background-color: var(--cor3);
+    padding-top: 15px;
 }
 
 .menu a {
