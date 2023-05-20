@@ -34,11 +34,15 @@ main {
 main header {
     text-align: center;
     background-color: var(--cor2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 form {
     text-align: center;
     background-color: var(--cor3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -50,6 +54,8 @@ form > div {
 
 form input {
     width: 90%;
+    border: none;
+    border-radius: 10px;
 }
 
 input.btn {
