@@ -63,6 +63,11 @@ header {
     margin-top: 15px;
 }
 
+#usuario a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
 .dropdown {
     display: inline-block;
     position: absolute;
@@ -73,6 +78,7 @@ header {
     position: absolute;
     background-color: var(--cor2);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    min-width: 64px;
     z-index: 1;
 }
 
@@ -92,27 +98,7 @@ header {
 .dropdown2 > a {
     text-decoration: none;
     color: var(--cor1);
-}
-
-.sub-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--cor2);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    min-width: 64px;
-    z-index: 1;
-    top: 0;
-    left: 100%;
-}
-
-.dropdown2:hover .sub-dropdown-content {
-    display: block;
-}
-
-.sub-dropdown-content > a {
-    display: block;
-    text-decoration: none;
-    color: var(--cor1);
+    font-weight: bold;
 }
 
 #contatos {
