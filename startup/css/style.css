@@ -11,6 +11,7 @@
     --cor3: #d9d9d9;
     --cor4: #66666e;
     --cor5: #80727b;
+    --cor6: #edf2f4;
 }
 
 * {
@@ -172,6 +173,47 @@ nav {
 .dropdown-content2 > a {
     display: block;
     text-decoration: none;
+    color: var(--cor1);
+}
+
+.conteudo-principal {
+    position: relative;
+    padding: 20px 10px;
+}
+
+.foto {
+    background-color: var(--cor6);
+    text-align: center;
+    border-radius: 50%; 
+}
+
+.produto {
+    padding: 12px;
+}
+
+.descricao {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-top: 20px;
+}
+
+.botao {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.botao .btn {
+    background-color: var(--cor5);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 20%;
+    
+}
+
+.botao .btn:hover {
+    background-color: var(--cor2);
     color: var(--cor1);
 }
 
